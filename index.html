@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+</head>
+
+<body class="bg-light">
+
+
+    <main>
+
+        <h1 class="titulo text-center mb-4">JUEGO DE MEMORIA</h1>
+
+        <div class="row mt-5 ms-5 me-0">
+            <div class="col-8 p-3 borde" id="tablero">
+            </div>
+            <div class="col-4">
+                <div class="w-100 h-100 borde d-flex flex-column text-center">
+                    <header>
+                        <span class="display-6 fw-bold">PISTAS</span>
+                    </header>
+                    <section class="h-100 contenedorPistas">
+                        <span class="mb-5 text-center pista" id="pista"></span>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <button id="btnModal" type="button" class="btn btn-primary invisible" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title display-6 fw-bold" id="exampleModalLabel">Sabias que...</h1>
+            </div>
+            <div id="modalBody" class="modal-body">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <script src="./js/bootstrap.bundle.min.js.map"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
